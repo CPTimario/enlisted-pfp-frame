@@ -43,8 +43,8 @@ export default function Home({ searchParams }: Readonly<Props>) {
       <Image
         src="/enlisted.png"
         alt="Enlisted Youth Camp Header"
-        width={1280}  // max-w-5xl roughly 1280px
-        height={640}  // adjust height to keep aspect ratio (example)
+        width={640}  // max-w-5xl roughly 1280px
+        height={320}  // adjust height to keep aspect ratio (example)
         style={{ maxWidth: "100%", height: "auto" }}
         priority // loads image eagerly for better LCP
       />
