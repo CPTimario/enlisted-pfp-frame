@@ -42,8 +42,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-  border: 1px solid #ffc2c2;
-  outline: 3px solid #ffc2c2;
+  border: 1px solid #f06a8b;
+  outline: 3px solid #f06a8b;
   outline-offset: 0.125rem;
 }
 
@@ -67,7 +67,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]:focus::-moz-range-thumb {
-  border: 1px solid #ffc2c2;
-  outline: 3px solid #ffc2c2;
+  border: 1px solid #f06a8b;
+  outline: 3px solid #f06a8b;
   outline-offset: 0.125rem;
 }
