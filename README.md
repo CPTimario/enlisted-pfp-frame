@@ -2,7 +2,7 @@
 
 Create and customize your own twibbons effortlessly with our user-friendly web application.
 
-[![Enlisted PFP](./public/thubmnail.png)](https://enlisted-pfp-frame.vercel.app)
+[![Enlisted PFP](./public/thumbnail.png)](https://enlisted-pfp-frame.vercel.app)
 
 ## How it Works
 
