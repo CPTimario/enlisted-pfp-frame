@@ -6,6 +6,7 @@ import { FaFileImage } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import Canvas from "./canvas";
 import { Button } from "@/app/_components/global/button";
+import DownloadNotification from "./notification";
 
 interface Props {
   searchParams: {
@@ -16,21 +17,25 @@ interface Props {
   };
 }
 
-function downloadURI(uri: string, name: string) {
-  const link = document.createElement("a");
-  link.download = name;
-  link.href = uri;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
 export default function Form({ searchParams }: Readonly<Props>) {
   const { frameUrl } = searchParams;
   const canvasHook = useTwibbonCanvas();
 
   const [fileName, setFileName] = useState<string>();
   const [scale, setScale] = useState<number>(1);
+
+  const [showNotification, setShowNotification] = useState(false);
+
+  function downloadURI(uri: string, name: string) {
+    const link = document.createElement("a");
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setShowNotification(true);
+    setTimeout(() => setShowNotification(false), 2000); // auto-hide
+  }
 
   useEffect(() => {
     if (searchParams?.slug) {
@@ -139,6 +144,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
           <FaDownload /> Download
         </Button>
       </div>
+      <DownloadNotification show={showNotification} />
     </div>
   );
 }

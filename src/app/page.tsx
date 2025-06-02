@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import RenderForm, { Props } from "./go/_components/render-form";
-import CaptionCopyBlock from "./_components/global/caption";
+import CaptionCopyBlock from "./go/_components/caption";
 
 export default function Home({ searchParams }: Readonly<Props>) {
   const [isReady, setIsReady] = useState(false);

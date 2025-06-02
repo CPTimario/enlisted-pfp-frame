@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'fade-in-out': 'fadeInOut 2.5s ease-in-out',
+      },
+      keyframes: {
+        fadeInOut: {
+          '0%': { opacity: 0 },
+          '10%': { opacity: 1 },
+          '90%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+      },
       screens: {
         "2xl": "1440px",
         xl: "1332px",

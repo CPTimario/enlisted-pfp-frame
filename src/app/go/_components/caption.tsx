@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "./button";
+import { Button } from "../../_components/global/button";
 
 export default function CaptionCopyBlock() {
   const caption = `I am [Name], and I’ve been 𝗘𝗡𝗟𝗜𝗦𝗧𝗘𝗗! Not just called, but chosen and empowered to be strong in God’s grace. I am ready to persevere like a farmer, be disciplined like an athlete, and focused on the mission Jesus has given me. There’s no backing down! 🪖⚔️🔥
