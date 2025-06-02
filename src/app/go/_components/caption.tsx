@@ -12,7 +12,7 @@ export default function CaptionCopyBlock() {
 
 𝗦𝗘𝗘 𝗬𝗢𝗨 𝗧𝗛𝗜𝗦 𝗝𝗨𝗡𝗘 𝟵-𝟭𝟭!
 
-#ENCampusPasig #ENLISTED2025 #YC2025`;
+#ENCampusPasig #EnlistedYC2025`;
 
   const [copied, setCopied] = useState(false);
 
