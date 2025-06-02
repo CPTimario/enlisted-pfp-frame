@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import RenderForm, { Props } from "./go/_components/render-form";
+import CaptionCopyBlock from "./_components/global/caption";
 
 export default function Home({ searchParams }: Readonly<Props>) {
   const [isReady, setIsReady] = useState(false);
@@ -43,13 +44,14 @@ export default function Home({ searchParams }: Readonly<Props>) {
       <Image
         src="/enlisted.png"
         alt="Enlisted Youth Camp Header"
-        width={640}  // max-w-5xl roughly 1280px
-        height={320}  // adjust height to keep aspect ratio (example)
+        width={640}
+        height={320}
         style={{ maxWidth: "100%", height: "auto" }}
-        priority // loads image eagerly for better LCP
+        priority
       />
 
       <RenderForm searchParams={searchParams} />
+      <CaptionCopyBlock />
     </div>
   );
 }
